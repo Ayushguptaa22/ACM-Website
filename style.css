@@ -13,9 +13,22 @@ html, body{
     color: black;
 }
 
+footer{
+    background-color: #111;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
 h1{
     font-size: 30px;
     font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 p{
