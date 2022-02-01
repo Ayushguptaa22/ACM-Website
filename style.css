@@ -13,6 +13,20 @@ html, body{
     color: black;
 }
 
+html{
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+
 footer{
     background-color: #111;
     color: white;
@@ -63,12 +77,13 @@ section{
     font-size: 2rem;
     font-weight: 700;
     z-index: 20;
+    background: #fff;
 }
 
 .toggle{
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 10px;
     padding: 20px;
     width: 50px;
     height: 50px;
@@ -94,7 +109,7 @@ section{
 }
 
 .navigation {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 100%;
     width: 100%;
@@ -164,6 +179,27 @@ section{
     bottom: 0;
     right: 0;
     height: 110%;
+}
+
+.title{
+    position: absolute;
+    top: 120px;
+    left: 40px;
+}
+
+.contact{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 @media(max-width: 1068px){
