@@ -176,6 +176,23 @@ section.home {
   width: 60%;
 }
 
+.upcoming-events{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f3035;
+}
+
+.last-events{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2f3035;  
+  margin-bottom: 60px;
+}
+
 /* SERVICES PAGE */
 .wrapper {
   padding: 30px 0;
