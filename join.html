@@ -1,119 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>GEU ACM</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo"><a href="index.html">
-        <img src="images/ACM GEU logo gas.png" alt="ACM logo" width=100px>
-      </a></div>
-      <div class="toggle"></div>
-      <div class="navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="join.html">Join us</a></li>
-        </ul>
-        <div class="social-bar">
-          <ul>
-            <li>
-              <a href="https://facebook.com">
-                <img src="images/facebook.png" target="_blank" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com">
-                <img src="images/twitter.png" target="_blank" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com">
-                <img src="images/instagram.png" target="_blank" alt="" />
-              </a>
-            </li>
-          </ul>
-          <a href="mailto:you@email.com" class="email-icon">
-            <img src="images/gmail.png" alt="gmail-logo" width=40px/>
-          </a>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>GEU ACM</title>
+  <style>
+    .navbar{
+      background-color: transparent;
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
+    .nav-link{
+      color: black;
+    }
+    .navbar-toggler:hover{
+      cursor: pointer;
+    }
+    
+    .nav-item:hover{
+      cursor: pointer;
+    }
+    .nav-item:hover .nav-link{
+      color: #d11818;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <!---Navbar-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+    <a href="index.html" class="navbar-brand">
+      <img src="images/ACM GEU logo gas.png" alt="" width="100px">
+    </a>
+    
+    <button class="navbar-toggler bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+    </button>
 
-    <section>
-      <div class="title">
-        <h1>Join us</h1>
-        <p>
-          Fill in your details with your field of interest and we will get back to you.
-          <br>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nobis at laboriosam! Itaque repellendus maxime mollitia? Quis reiciendis hic, architecto asperiores amet assumenda voluptates fuga!
-        </p>
-      </div>
-      <div class="contact">
-        <div class="contact-form">
-          <form>
-            <div class="row">
-              <div class="input50">
-                <input type="text" placeholder="First Name" />
-              </div>
-              <div class="input50">
-                <input type="text" placeholder="Last Name" />
-              </div>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link"><h4>Home</h4></a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link"><h4>About</h4></a>
+        </li>
+        <li class="nav-item">
+          <a href="events.html" class="nav-link"><h4>Events</h4></a>
+        </li>
+        <li class="nav-item">
+          <a href="join.html" class="nav-link"><h4>Join Us</h4></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+
+  <!--Home Content-->
+  <section class="about-home p-5">
+    <div class="container">
+      <h2>Join GEU ACM</h2>
+      <p class="lead">
+          <h5>GEU ACM provides a platform for students to learn and grow in the field of computer science.</h5>
+      </p>
+      <p>
+        Join us and be a part of the future. <hr>
+      </p>
+    </div>
+  </section>
+
+ 
+
+  <!---Joining Form-->
+  <section class="joining-form">
+      <div class="container">
+          <form class="row g-3">
+            <div class="col-md-6">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" id="firstname" class="form-control" placeholder="Your Name" required>
             </div>
-            <div class="row">
-              <div class="input100">
-                <input type="text" placeholder="Email" />
-              </div>
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" id="lastname" class="form-control" placeholder="Last Name" required>
             </div>
-            <div class="row">
-              <div class="input100">
-                <input type="text" placeholder="Institute" />
-              </div>
+            <div class="col-md-8">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="xyz321@gmail.com" required>
             </div>
-            <div class="row">
-              <div class="input100">
-                <textarea placeholder="Message"></textarea>
-              </div>
+            <div class="col-md-4">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="number" id="phone" class="form-control" placeholder="+91-xxxx xxx xxx">
             </div>
-            <div class="row">
-              <div class="input100">
-                <input type="submit" value="Send" />
-              </div>
+            <div class="col-md-12 pb-2">
+                <label for="query" class="form-label">Any Queries ?</label>
+                <textarea name="query" id="query" cols="30" rows="5" class="form-control" placeholder="Your Queries"></textarea>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-danger btn-block mb-3">Submit</button>
             </div>
           </form>
-        </div>
+      </div>
+  </section>
 
-        <div class="contact-info">
-          <div class="info-box">
-            <img src="images/address.png" class="contact-icon" alt="" />
-            <div class="details">
-              <h4>Address</h4>
-              <p>Clement Town, Dehradun, India</p>
-            </div>
-          </div>
-          <div class="info-box">
-            <img src="images/gmail.png" class="contact-icon" alt="" />
-            <div class="details">
-              <h4>Email</h4>
-              <a href="mailto:anyone@example.com">anyone@example.com</a>
-            </div>
-          </div>
-          <div class="info-box">
-            <img src="images/call.png" class="contact-icon" alt="" />
-            <div class="details">
-              <h4>Call</h4>
-              <a href="tel:+916785555555">+91 678 555 5555</a>
-            </div>
-          </div>
+
+
+ 
+
+
+  <!--Newsletter-->
+  <section class="bg-dark text-light p-4">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center">
+        <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Enter Email" >
+          <button class="btn btn-secondary btn-lg" type="button">Subscribe</button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  
+
+  <!--Footer-->
+  <footer class="site-footer p-2 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-5">
+          <h2>About us <br> </h2>
+          <img class="img-fluid" width=120px src="images/ACM GEU logo gas.png" alt="">
+          <p>
+            <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde enim rem, commodi eos assumenda vel deleniti. Consectetur, cupiditate quia.
+          </p>
+        </div>
+        <div class="col-md-4 mb-5">
+          <h2>Quick Links</h2>
+          <ul class="list-unstyled footer-link">
+            <li><a href="">About us</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Join us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h2>Socials</h2>
+          <ul class="list-unstyled footer-link">
+            <li><a href=""><i class="bi bi-facebook"></i> Facebook</a></li>
+            <li><a href=""><i class="bi bi-twitter"></i> Twitter</a></li>
+            <li><a href=""><i class="bi bi-linkedin"></i> Linkedin</a></li>
+            <li><a href=""><i class="bi bi-instagram"></i> Instagram</a></li>
+        </div>
+      </div>
+      <hr>
+      <p class="lead">
+        Copyright &copy; 2022 GEU ACM. All rights reserved.
+      </p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-4">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+</body>
 </html>
