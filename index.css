@@ -1,0 +1,100 @@
+#header{
+    top: 0;
+    padding-top: 20px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 200;
+    padding-bottom: 10px;
+}
+#backgroundimage{
+    background: url("images/home-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+.nav-link{
+    margin-right: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.nav-link > h4{
+    color: white;
+    text-shadow: 1px 1px 15px white;
+}
+body{
+    overflow-x: hidden;
+}
+#latest-events{
+    margin-top: 100px;
+}
+#acm_logo{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 65%;
+    top: 150px;
+    animation: logo_anim 2s linear infinite;
+}
+@-webkit-keyframes logo_anim{
+    0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+#images_phone{
+    position: relative;
+}
+.font{
+    font-family: 'Roboto', sans-serif;
+}
+#home_content{
+    margin-top: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.home-content{
+    background-color:rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 25px;
+}
+#welcome{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-shadow: 1px 1px 15px white;
+}
+#strong{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 15px white;
+}
+#text{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px 1px 15px white;
+}
+#learnmore{
+    margin-left: 40%;
+    color: white;
+}
+#instructors{
+    width: auto;
+    justify-content: center;
+    overflow-x: hidden;
+}
+#contact-info{
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
