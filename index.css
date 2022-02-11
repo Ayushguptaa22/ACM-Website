@@ -7,7 +7,6 @@
     padding-bottom: 10px;
 }
 #backgroundimage{
-    background: url("images/home-img.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -20,7 +19,7 @@
     font-weight: 700;
 }
 .nav-link > h4{
-    color: white;
+    color: black;
     text-shadow: 1px 1px 15px white;
 }
 body{
@@ -61,7 +60,6 @@ body{
     justify-content: center;
 }
 .home-content{
-    background-color:rgba(0, 0, 0, 0.2);
     padding-bottom: 20px;
     padding-top: 20px;
     border-radius: 25px;
