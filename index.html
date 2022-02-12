@@ -12,6 +12,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
+  <!--Icons cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+font-awesome/5.15.2/css/all.min.css"/>
 
   <!-- Local style sheets -->
   <link rel="stylesheet" href="style.css">
@@ -45,6 +48,143 @@
       padding-left: 40px;
       padding-right: 10px;
     }
+
+    .office-container{
+    min-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+    justify-content: space-evenly;
+  }
+.office-container .main-card{
+    width: 200%;
+    display: flex;
+    transition: all 1s ease;
+    justify-content: space-around;
+}
+#two:checked ~ .main-card{
+    margin-left: -100%;
+}
+.main-card .cards{
+    width: calc(100% /2 -10px);
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+    flex-wrap: wrap;
+}
+.main-card .cards .card{
+    background: #fff;
+    width: calc(100% / 3-10px);
+    padding: 30px;
+    border-radius: 24px;
+    transition: all 0.5s ease;
+    margin: 20px;
+}
+.main-card .cards .card:hover{
+    transform: translateY(-15px);
+}
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    background: brown;
+    border-radius: 50%;
+    padding: 3px;
+}
+.card .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.card .content .details .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.card .content .details .job{
+    font-size: 14px;
+    font-weight: 400;
+    color: brown;
+}
+.card .content .media-icons{
+    display: flex;
+    margin-top: 10px;
+}
+.card .content .media-icons a{
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    background: brown;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    font-size: 14px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+.content .media-icons a:hover{
+    border-color: brown;
+    color: brown;
+    background: #fff;
+}
+
+.button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.button label{
+    height: 15px;
+    width: 15px;
+    background: rgb(241, 31, 31);
+    border-radius:20px;
+    margin: 0 4px;
+    transition: all 0.5s ease;
+}
+.button label.active{
+    width: 35px;
+}
+
+#one:checked ~ .button label.one{
+    width: 35px;
+}
+#two:checked ~ .button label.two{
+    width: 35px;
+}
+#two:checked ~ .button label.one{
+    width: 15px;
+}
+#one:checked ~ .button label.two{
+    width: 15px;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .main-card .cards .card{
+        width: calc(100% / 2-10px);
+        margin: 20px 0 10px 0;
+    }
+}
+
+@media (max-width: 600px){
+    .main-card .cards .card{
+        width: 100%;
+        margin: 20px 0 10px 0;
+    }
+}
     
   </style>
 </head>
@@ -65,7 +205,7 @@
       <img src="images/ACM GEU logo gas.png" alt="" width="100px">
     </a>
     
-    <button class="navbar-toggler bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+    <button onclick="increase_height()" class="navbar-toggler bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
       </svg>
@@ -106,7 +246,7 @@
         <a href="about.html" class="btn btn-outline-danger btn-md">Learn More</a>
 
       </div>
-        <img class="img-fluid d-none d-sm-block" src="images/home-img.png" alt="home-img" width=730px>
+        <img id="header_img" class="img-fluid d-none d-sm-block" src="images/home-img.png" alt="home-img" width=730px>
     </div>
     </div>
   </section>
@@ -115,7 +255,7 @@
   <!---Latest Events-->
   <section data-aos="fade-up" id="latest-events" class="p-5 pt-4 pb-4">
     <div class="container">
-      <h1>Our Latest Events</h1>
+      <h1>Upcoming Events</h1>
       <div class="row text-center g-4">
         <div class="col-md-4">
           <div class="card bg-secondary text-light">
@@ -169,27 +309,6 @@
     </div>
   </section>
 
-  <!---ACM App-->
-  <section data-aos="fade-up" class="p-5">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div id="images_phone" class="col-md">
-          <img class="img-fluid" src="images/smart-phone.svg" alt="">
-          <img id="acm_logo" src="images/logo.png" alt="">
-        </div>
-        <div class="col-md">
-          <h1>GEU ACM APP</h1>
-          <p class="lead">
-            <h3>Download the ACM App to get the latest updates about GEU ACM.</h3>
-          </p>
-          <p>
-            GEU ACM brings to you the first ever app of ACM Student Chapter with numerous features. Keeping you notified of all the latest updates is its main motive. The list of upcoming events will be displayed in the app so that you don't miss out on your opportunities. Connectivity is yet another feature of this app which makes it different from the others. The contacts of all the members of the Core Committee, as well as the mentors, have been provided so that your questions do not go unanswered. You can clarify your doubts any time you want and that too with just a single click.
-          </p>
-          <a href="https://play.google.com/store/apps/details?id=com.yashkarora.geuacm" class="btn btn-danger">Download</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!---Our Instructors-->
   <section data-aos="fade-up" class="p-5 bg-dark">
@@ -252,18 +371,25 @@
     </div>
   </section>
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> 21b321e82a99637c71801003b003930e241eb438
   
 
 
   <!--Our Office bearers-->
+<<<<<<< HEAD
   <section data-aos="fade-up" class="p-5 bg-secondary">
   <div class="office-container">
     <h2 class="text-center text-black">Our Office Bearers</h2>
       <p class="lead text-center text-black mb-5">
         We are proud to have a team of well experienced and dedicated office bearers.
       </p>
+=======
+  <div class="office-container">
+>>>>>>> 21b321e82a99637c71801003b003930e241eb438
     <input type="radio" name="dot" id="one">
     <input type="radio" name="dot" id="two">
 
@@ -409,18 +535,24 @@
         <label for="two" class="two"></label>
     </div>
 </div>
+<<<<<<< HEAD
 </section>
 
 
 
 >>>>>>> Stashed changes
+=======
+
+
+
+>>>>>>> 21b321e82a99637c71801003b003930e241eb438
   <!--Contact & map-->
   <section data-aos="fade-up" id="contact-info" class="p-5">
     <div class="container">
       <div class="row g-3">
         <div class="col-md-6">
           <h2 class="text-center mb-4">Contact Info</h2>
-          <ul class="list-group list-group-flush lead">
+          <ul id="list_contact" class="list-group list-group-flush lead">
             <li class="list-group-item">
               <span class="fw-bold">Location : </span> Clement Town, Dehradun, Uttarakhand, India.
             </li>
@@ -436,22 +568,8 @@
 
         </div>
         <div class="col-md-5">
-          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.3110768594356!2d77.9948196176354!3d30.268635693499743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b9451ae8dfd%3A0xf39c46d34a152faa!2sGraphic%20Era%20(Deemed%20to%20be%20University)!5e0!3m2!1sen!2sin!4v1644316630271!5m2!1sen!2sin" width="400" height="300" style="border-radius:5px;" 
+          <p><iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.3110768594356!2d77.9948196176354!3d30.268635693499743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b9451ae8dfd%3A0xf39c46d34a152faa!2sGraphic%20Era%20(Deemed%20to%20be%20University)!5e0!3m2!1sen!2sin!4v1644316630271!5m2!1sen!2sin" width="400" height="300" style="border-radius:5px;" 
           allowfullscreen="" loading="lazy"></iframe></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div data-aos="fade-up">
-  <!--Newsletter-->
-  <section class="bg-dark text-light p-4">
-    <div class="container">
-      <div class="d-md-flex justify-content-between align-items-center">
-        <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
-        <div class="input-group">
-          <input type="email" class="form-control" placeholder="Enter Email" >
-          <button class="btn btn-danger btn-lg" type="button">Subscribe</button>
         </div>
       </div>
     </div>
@@ -536,5 +654,6 @@
         offset: 30
       });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
