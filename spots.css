@@ -1,0 +1,94 @@
+/* Spot styling */
+.blue_color{
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    background: #4861E6;
+    opacity: 0.5;
+    filter: blur(150px);
+    border-radius: 200px;
+    width: 200px;
+    height: 300px;
+}
+.purple_color{
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background: #B157DC;
+    opacity: 0.5;
+    filter: blur(150px);
+    border-radius: 200px;
+}
+#spot_one_b{
+    top: 100px;
+    left: 10%;
+}
+#spot_two_b{
+    top: 1100px;
+    left: 10%;
+}
+#spot_three_b{
+    top: 1100px;
+    left: 40%;
+}
+#spot_four_b{
+    top: 1400px;
+    left: 70%;
+}
+#spot_five_b{
+    top: 2500px;
+    left: 70%;
+}
+#spot_six_b{
+    top: 900px;
+    left: 20%;
+}
+#spot_seven_b{
+    top: 2000px;
+    left: 40%;
+}
+#spot_eight_b{
+    top: 3000px;
+    left: 20%;
+}
+
+
+
+#spot_one_p{
+    top: 100px;
+    left: 70%;
+}
+#spot_two_p{
+    top: 500px;
+    left: 40%;
+}
+#spot_three_p{
+    top: 1100px;
+    left: 70%;
+}
+#spot_four_p{
+    top: 1900px;
+    left: 50%;
+}
+#spot_five_p{
+    top: 2500px;
+    left: 10%;
+}
+#spot_six_p{
+    top: 600px;
+    left: 80%;
+}
+#spot_seven_p{
+    top: 700px;
+    left: 40%;
+}
+#spot_eight_p{
+    top: 2000px;
+    left: 80%;
+}
+#spot_nine_p{
+    top: 3000px;
+    left: 70%;
+}
