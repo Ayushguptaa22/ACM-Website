@@ -95,4 +95,48 @@ body{
     margin-top: 100px;
     margin-bottom: 70px;
 }
+@media screen and (max-width: 768px) {
+  
+    .news-input{
+      width: 50%;
+    }
+    .news-input-btn{
+      width: 50%;
+    }
+    .site-footer{
+      padding: 1em;
+    }
+    .site-footer h2{
+      font-size: 18px;
+    }
+    .site-footer .footer-link li{
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
 
+    #backgroundimage{
+        height: 400px;
+    }
+    #latest-events{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    #acm_logo{
+        width: 40px;
+        height: 40px;
+        left: 55%;
+        top: 80px;
+    }
+    #map{
+        width: 390px;
+    }
+    #contact-info{
+        padding-left: 0!important;
+    }
+    #list_contact{
+        margin-left: 48px;
+    }
+    #list_contact li{
+        width: 270px;
+    }
+  }

@@ -109,23 +109,3 @@ body::before{
   color: black;
 }
 
-@media screen and (max-width: 768px) {
-  
-  .news-input{
-    width: 50%;
-  }
-  .news-input-btn{
-    width: 50%;
-  }
-  .site-footer{
-    padding: 1em;
-  }
-  .site-footer h2{
-    font-size: 18px;
-  }
-  .site-footer .footer-link li{
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-
-}
