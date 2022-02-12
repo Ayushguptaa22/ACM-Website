@@ -205,7 +205,7 @@ input[type="radio"]{
       <img src="images/ACM GEU logo gas.png" alt="" width="100px">
     </a>
     
-    <button class="navbar-toggler bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+    <button onclick="increase_height()" class="navbar-toggler bg-red" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
       </svg>
@@ -246,7 +246,7 @@ input[type="radio"]{
         <a href="about.html" class="btn btn-outline-danger btn-md">Learn More</a>
 
       </div>
-        <img class="img-fluid d-none d-sm-block" src="images/home-img.png" alt="home-img" width=730px>
+        <img id="header_img" class="img-fluid d-none d-sm-block" src="images/home-img.png" alt="home-img" width=730px>
     </div>
     </div>
   </section>
@@ -530,7 +530,7 @@ input[type="radio"]{
       <div class="row g-3">
         <div class="col-md-6">
           <h2 class="text-center mb-4">Contact Info</h2>
-          <ul class="list-group list-group-flush lead">
+          <ul id="list_contact" class="list-group list-group-flush lead">
             <li class="list-group-item">
               <span class="fw-bold">Location : </span> Clement Town, Dehradun, Uttarakhand, India.
             </li>
@@ -546,7 +546,7 @@ input[type="radio"]{
 
         </div>
         <div class="col-md-5">
-          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.3110768594356!2d77.9948196176354!3d30.268635693499743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b9451ae8dfd%3A0xf39c46d34a152faa!2sGraphic%20Era%20(Deemed%20to%20be%20University)!5e0!3m2!1sen!2sin!4v1644316630271!5m2!1sen!2sin" width="400" height="300" style="border-radius:5px;" 
+          <p><iframe  id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.3110768594356!2d77.9948196176354!3d30.268635693499743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b9451ae8dfd%3A0xf39c46d34a152faa!2sGraphic%20Era%20(Deemed%20to%20be%20University)!5e0!3m2!1sen!2sin!4v1644316630271!5m2!1sen!2sin" width="400" height="300" style="border-radius:5px;" 
           allowfullscreen="" loading="lazy"></iframe></p>
         </div>
       </div>
@@ -632,5 +632,6 @@ input[type="radio"]{
         offset: 30
       });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
