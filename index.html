@@ -146,7 +146,7 @@ font-awesome/5.15.2/css/all.min.css"/>
 .button label{
     height: 15px;
     width: 15px;
-    background: rgb(241, 31, 31);
+    background: rgba(255, 255, 255, 0.917);
     border-radius:20px;
     margin: 0 4px;
     transition: all 0.5s ease;
@@ -172,6 +172,10 @@ input[type="radio"]{
     display: none;
 }
 
+.card{
+  border-radius: 10px;
+}
+
 @media (max-width: 768px){
     .main-card .cards .card{
         width: calc(100% / 2-10px);
@@ -180,9 +184,12 @@ input[type="radio"]{
 }
 
 @media (max-width: 600px){
-    .main-card .cards .card{
-        width: 100%;
-        margin: 20px 0 10px 0;
+    .office-container .offb{
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 }
     
@@ -239,6 +246,12 @@ input[type="radio"]{
         <p class="lead my-4">
           <strong>THE LARGEST COMPUTING SOCIETY,<br>
           NOW AT GEU</strong>
+        </p>
+        <p>
+          We aim to provide a platform for students to learn <br>
+          and grow in their field of interest. <br>
+          We also aim to provide a platform for students to <br>
+          interact with each other and share their knowledge. <br>
         </p>
         <p>
           Be a part of the largest computing society in the world.
@@ -327,7 +340,6 @@ input[type="radio"]{
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nesciunt?
               </p>
-              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
@@ -343,7 +355,6 @@ input[type="radio"]{
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nesciunt?
               </p>
-              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
@@ -359,7 +370,6 @@ input[type="radio"]{
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, nesciunt?
               </p>
-              <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
               <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
@@ -376,12 +386,10 @@ input[type="radio"]{
 
   <section data-aos="fade-up" class="p-2 bg-secondary">
   <div class="office-container">
-    <h2 class="text-center text-black">Our Office Bearers</h2>
-      <p class="lead text-center text-black mb-3">
+    <h2 class="offb text-center text-black">Our Office Bearers</h2>
+      <p class="offb lead text-center text-black mb-3">
         We are proud to have a team of well experienced and dedicated office bearers.
       </p>
-
-  <div class="office-container">
 
     <input type="radio" name="dot" id="one">
     <input type="radio" name="dot" id="two">
@@ -528,7 +536,6 @@ input[type="radio"]{
         <label for="two" class="two"></label>
     </div>
 </div>
-
 </section>
 
 
