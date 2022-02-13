@@ -1,0 +1,123 @@
+.nav-link{
+    margin-right: 20px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.font{
+    font-family: 'Roboto', sans-serif;
+}
+#about_heading{
+    font-size: 40px;
+    font-weight: 500;
+}
+#about_para{
+    font-size: 20px;
+    font-weight: 500;
+}
+#select_year{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#ourteam_heading{   
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#ourteam_heading h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+.team_heading{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin-left: 125px;
+}
+#select_year a{
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: #dc3545;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid  #dc3545;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#select_year a:hover{
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+    transition: 0.5s;
+}
+#faculty_info{
+    display: flex;
+    margin-left: 125px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.img{
+    width: 230px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.name{
+    font-size: 20px;
+    font-family:  'Roboto', sans-serif;
+    text-align: center;
+}
+.desig{
+    font-size: 15px;
+    font-family:  'Roboto', sans-serif;
+    text-align: center;
+    margin-top: -12px;
+}
+.cardaboutus {
+    width: 300px;
+    height: 450px;
+    perspective: 1000px;
+    border: none;
+    border-radius: 0;
+}
+.card-inner {
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.cardaboutus:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card-front{
+    margin-right: 20px;
+    border-top: 8px solid #dc3545;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px 15px 20px;
+    box-shadow: 2px 2px 15px 2px black;
+    border-radius: 0 0 10px 10px;
+}
+.card-back {
+    top: 0;
+    left: 20px;
+    display: flex;
+    transform: rotateY(180deg);
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px 15px 20px;
+    box-shadow: 2px 2px 15px 2px black;
+    border-radius:10px;
+    width: 270px;
+    height: 376px;
+    background-image: linear-gradient(to bottom right, white, #ffccd1);
+}
+.media-icons a>i{
+    margin-right: 8px;
+}
