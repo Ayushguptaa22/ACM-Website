@@ -1,0 +1,246 @@
+/* Spot styling */
+.blue_color{
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    background: #4861E6;
+    opacity: 0.5;
+    filter: blur(150px);
+    border-radius: 200px;
+    width: 200px;
+    height: 300px;
+}
+.purple_color{
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background: #B157DC;
+    opacity: 0.5;
+    filter: blur(150px);
+    border-radius: 200px;
+}
+#spot_one_b{
+    top: 100px;
+    left: 10%;
+}
+#spot_two_b{
+    top: 1100px;
+    left: 10%;
+}
+#spot_three_b{
+    top: 1100px;
+    left: 40%;
+}
+#spot_four_b{
+    top: 1400px;
+    left: 70%;
+}
+#spot_five_b{
+    top: 2500px;
+    left: 70%;
+}
+#spot_six_b{
+    top: 900px;
+    left: 20%;
+}
+#spot_seven_b{
+    top: 2000px;
+    left: 40%;
+}
+#spot_eight_b{
+    top: 3000px;
+    left: 20%;
+}
+
+
+
+#spot_one_p{
+    top: 100px;
+    left: 70%;
+}
+#spot_two_p{
+    top: 500px;
+    left: 40%;
+}
+#spot_three_p{
+    top: 1100px;
+    left: 70%;
+}
+#spot_four_p{
+    top: 1900px;
+    left: 50%;
+}
+#spot_five_p{
+    top: 2500px;
+    left: 10%;
+}
+#spot_six_p{
+    top: 600px;
+    left: 80%;
+}
+#spot_seven_p{
+    top: 700px;
+    left: 40%;
+}
+#spot_eight_p{
+    top: 2000px;
+    left: 80%;
+}
+#spot_nine_p{
+    top: 3000px;
+    left: 70%;
+}
+#spot_ten_p,#spot_eleven_p,#spot_twelve_p,#spot_thirteen_p,#spot_thirteen_b,#spot_fourteen_b,#spot_nine_b,#spot_ten_b,#spot_eleven_b,#spot_twelve_b,#spot_fourteen_p,#spot_fifteen_p,#spot_sixteen_p,#spot_seventeen_p,#spot_eighteen_p,#spot_nineteen_p,#spot_twenty_p{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    #spot_one_b{
+        top: 100px;
+        left: 10%;
+    }
+    #spot_two_b{
+        top: 1100px;
+        left: 10%;
+    }
+    #spot_three_b{
+        top: 1100px;
+        left: 40%;
+    }
+    #spot_four_b{
+        top: 1400px;
+        left: 50%;
+    }
+    #spot_five_b{
+        top: 2500px;
+        left: 50%;
+    }
+    #spot_six_b{
+        top: 900px;
+        left: 20%;
+    }
+    #spot_seven_b{
+        top: 2000px;
+        left: 40%;
+    }
+    #spot_eight_b{
+        top: 3000px;
+        left: 20%;
+    }
+    #spot_nine_b,#spot_ten_b,#spot_eleven_b,#spot_twelve_b,#spot_thirteen_b,#spot_fourteen_b{
+        display: block;
+    }
+    #spot_nine_b{
+        top: 3500px;
+        left: 20%;
+    }
+    #spot_ten_b{
+        top: 4600px;
+        left: 10%;
+    }
+    #spot_eleven_b{
+        top: 4800px;
+        left: 50%;
+    }
+    #spot_twelve_b{
+        top: 5500px;
+        left: 10%;
+    }
+    #spot_thirteen_b{
+        top: 6000px;
+        left: 50%;
+    }
+    #spot_fourteen_b{
+        top: 6000px;
+        left: 10%;
+    }
+    
+    
+    #spot_one_p{
+        top: 100px;
+        left: 50%;
+    }
+    #spot_two_p{
+        top: 500px;
+        left: 40%;
+    }
+    #spot_three_p{
+        top: 1100px;
+        left: 50%;
+    }
+    #spot_four_p{
+        top: 1900px;
+        left: 50%;
+    }
+    #spot_five_p{
+        top: 2500px;
+        left: 10%;
+    }
+    #spot_six_p{
+        top: 600px;
+        left: 50%;
+    }
+    #spot_seven_p{
+        top: 700px;
+        left: 40%;
+    }
+    #spot_eight_p{
+        top: 2000px;
+        left: 50%;
+    }
+    #spot_nine_p{
+        top: 3000px;
+        left: 50%;
+    }
+    #spot_ten_p,#spot_eleven_p,#spot_twelve_p,#spot_thirteen_p,#spot_fourteen_p,#spot_fifteen_p,#spot_sixteen_p,#spot_seventeen_p,#spot_eighteen_p,#spot_nineteen_p,#spot_twenty_p{
+        display: block;
+    }
+    #spot_ten_p{
+        top: 3500px;
+        left: 45%;
+    }
+    #spot_eleven_p{
+        top: 3600px;
+        left: 45%;
+    }
+    #spot_twelve_p{
+        top: 4000px;
+        left: 50%;
+    }
+    #spot_thirteen_p{
+        top: 4000px;
+        left: 10%;
+    }
+    #spot_fourteen_p{
+        top: 4000px;
+        left: 30%;
+    }
+    #spot_fifteen_p{
+        top: 4500px;
+        left: 10%;
+    }
+    #spot_sixteen_p{
+        top: 4600px;
+        left: 30%;
+    }
+    #spot_seventeen_p{
+        top: 4600px;
+        left: 45%;
+    }
+    #spot_eighteen_p{
+        top: 5000px;
+        left:45%;
+    }
+    #spot_nineteen_p{
+        top: 6100px;
+        left: 45%;
+    }#spot_twenty_p{
+        top: 6100px;
+        left: 10%;
+    }
+
+}
