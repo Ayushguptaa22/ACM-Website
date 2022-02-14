@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px;
 }
 .nav-link{
     margin-right: 20px;
@@ -25,9 +24,6 @@
 body{
     overflow-x: hidden;
 }
-#latest-events{
-    margin-top: 100px;
-}
 #acm_logo{
     position: absolute;
     width: 50px;
@@ -35,6 +31,9 @@ body{
     left: 65%;
     top: 150px;
     animation: logo_anim 2s linear infinite;
+}
+#latest-events{
+    margin-top:100px;
 }
 @-webkit-keyframes logo_anim{
     0% {
