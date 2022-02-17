@@ -23,6 +23,9 @@ font-awesome/5.15.2/css/all.min.css"/>
 
   <!-- Animate on scroll library cdn -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Image carousel cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   
   <title>GEU ACM</title>
   <style>
@@ -176,6 +179,12 @@ input[type="radio"]{
   border-radius: 10px;
 }
 
+/* image slider */
+.carousel-cell::before{
+  content: "";
+  display: block;
+}
+
 @media (max-width: 768px){
     .main-card .cards .card{
         width: calc(100% / 2-10px);
@@ -268,7 +277,7 @@ input[type="radio"]{
   <!---Latest Events-->
   <section data-aos="fade-up" id="latest-events" class="p-5 pt-4 pb-4">
     <div class="container">
-      <h1>Upcoming Events</h1>
+      <h2 class="p-3">Upcoming Events</h2>
       <div class="row text-center g-4">
         <div class="col-md-4">
           <div class="card bg-secondary text-light">
@@ -539,9 +548,26 @@ input[type="radio"]{
 </section>
 
 
+<!-- Recent events slider-->
+<section data-aos="fade-up" class="p-5 bg-dark">
+  <div class="container">
+    <h2 class="p-3 text-white">Our past events</h2>
+    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": true}'>
+      <div class="carousel-cell">
+        <a href="events.html"><img src="images/new-home.jpg" alt="" width=730px></a>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/new.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/home-img.png" alt="" width=730px>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!--Contact & map-->
-  <section data-aos="fade-up" id="contact-info" class="p-5">
+  <section id="contact-info" class="p-5">
     <div class="container">
       <div class="row g-3">
         <div class="col-md-6">
@@ -648,6 +674,7 @@ input[type="radio"]{
         offset: 30
       });
     </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
