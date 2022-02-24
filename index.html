@@ -23,6 +23,9 @@ font-awesome/5.15.2/css/all.min.css"/>
 
   <!-- Animate on scroll library cdn -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Image carousel cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   
   <title>GEU ACM</title>
   <style>
@@ -123,7 +126,7 @@ font-awesome/5.15.2/css/all.min.css"/>
     height: 35px;
     width: 35px;
     color: #fff;
-    background: brown;
+    background: rgb(211, 43, 43);
     margin: 0 4px;
     border-radius: 50%;
     text-align: center;
@@ -133,8 +136,8 @@ font-awesome/5.15.2/css/all.min.css"/>
     transition: all 0.4s ease;
 }
 .content .media-icons a:hover{
-    border-color: brown;
-    color: brown;
+    border-color: rgb(211, 43, 43);
+    color: rgb(211, 43, 43);
     background: #fff;
 }
 
@@ -146,7 +149,7 @@ font-awesome/5.15.2/css/all.min.css"/>
 .button label{
     height: 15px;
     width: 15px;
-    background: rgba(255, 255, 255, 0.917);
+    background: rgb(211, 43, 43);
     border-radius:20px;
     margin: 0 4px;
     transition: all 0.5s ease;
@@ -174,6 +177,12 @@ input[type="radio"]{
 
 .card{
   border-radius: 10px;
+}
+
+/* image slider */
+.carousel-cell::before{
+  content: "";
+  display: block;
 }
 
 @media (max-width: 768px){
@@ -268,7 +277,7 @@ input[type="radio"]{
   <!---Latest Events-->
   <section data-aos="fade-up" id="latest-events" class="p-5 pt-4 pb-4">
     <div class="container">
-      <h1>Upcoming Events</h1>
+      <h2 class="p-3">Upcoming Events</h2>
       <div class="row text-center g-4">
         <div class="col-md-4">
           <div class="card bg-secondary text-light">
@@ -324,10 +333,10 @@ input[type="radio"]{
 
 
   <!---Our Instructors-->
-  <section data-aos="fade-up" class="p-5 bg-dark">
+  <section data-aos="fade-up" class="p-5 bg-transparent text-black">
     <div class="container">
-      <h2 class="text-center text-white">Our Instructors</h2>
-      <p class="lead text-center text-white mb-5">
+      <h2 class="text-center text-black">Our Instructors</h2>
+      <p class="lead text-center text-black mb-5">
         We have a team of dedicated and experienced instructors who are experts in their respective fields.
       </p>
       <div id="instructors" class="row g-3">
@@ -384,7 +393,7 @@ input[type="radio"]{
 
   <!--Our Office bearers-->
 
-  <section data-aos="fade-up" class="p-2 bg-secondary">
+  <section data-aos="fade-up" class="p-2 bg-transparent">
   <div class="office-container">
     <h2 class="offb text-center text-black">Our Office Bearers</h2>
       <p class="offb lead text-center text-black mb-3">
@@ -539,9 +548,26 @@ input[type="radio"]{
 </section>
 
 
+<!-- Recent events slider-->
+<section data-aos="fade-up" class="p-2 bg-transparent">
+  <div class="container">
+    <h2 class="p-4 text-black">Our past events</h2>
+    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": true}'>
+      <div class="carousel-cell">
+        <a href="events.html"><img src="images/new-home.jpg" alt="" width=730px></a>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/new.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/home-img.png" alt="" width=730px>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!--Contact & map-->
-  <section data-aos="fade-up" id="contact-info" class="p-5">
+  <section id="contact-info" class="p-5">
     <div class="container">
       <div class="row g-3">
         <div class="col-md-6">
@@ -648,6 +674,7 @@ input[type="radio"]{
         offset: 30
       });
     </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
