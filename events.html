@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Animate on scroll library cdn -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="aboutspots.css">
+
+  <!-- Google fonts roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
   <title>GEU ACM</title>
+
+  <!-- Image carousel cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  
+
   <style>
+    *{
+      font-family:Roboto , sans-serif;
+    }
     .navbar{
       background-color: transparent;
       padding-top: 10px;
@@ -16,6 +39,8 @@
     }
     .nav-link{
       color: black;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
     }
     .navbar-toggler:hover{
       cursor: pointer;
@@ -27,8 +52,28 @@
     .nav-item:hover .nav-link{
       color: #d11818;
     }
-    
-    
+    .margin-bottom{
+      margin-bottom: 100px;
+    }
+    .buttons{
+      display: flex;
+      justify-content: right;
+    }
+    .buttons a{
+      margin-right: 20px;
+      margin-top: 35px;
+      text-decoration: none;
+      padding: 12px 20px;
+      background-color: #dc3545;
+      border:1px solid #dc3545;
+      border-radius: 0.25rem;
+      color: white;
+    }
+    .register:hover, .know_more:hover{
+      color: #fff;
+      background-color: #bb2d3b;
+      border-color: #b02a37;
+    }
   </style>
 </head>
 <body>
@@ -65,7 +110,7 @@
   </nav>
 
   <!--Home Content-->
-  <section class="about-home p-5">
+  <section data-aos="fade-up" class="about-home p-5">
     <div class="container">
       <h2>Events GEU ACM</h2>
       <p>
@@ -81,8 +126,95 @@
 
   <!---Latest Events-->
 
+<!-- Dev OPS slider-->
+<section class="p-2 bg-transparent margin-bottom">
+  <div class="container">
+    <h2 class="p-4 text-black">Dev Ops</h2>
+    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": true}'>
+      <div class="carousel-cell">
+        <img src="images/new-home.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/new.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/home-img.png" alt="" width=730px>
+      </div>
+    </div>
+    <div class="buttons">
+      <a href="" class="register">Register</a>
+      <a href="" class="know_more">Know more</a>
+    </div>
+  </div>
+</section>
+
+<!-- Webinars slider-->
+<section class="p-2 bg-transparent margin-bottom">
+  <div class="container">
+    <h2 class="p-4 text-black">Webinars</h2>
+    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": true}'>
+      <div class="carousel-cell">
+        <img src="images/new-home.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/new.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/home-img.png" alt="" width=730px>
+      </div>
+    </div>
+    <div class="buttons">
+      <a href="" class="register">Register</a>
+      <a href="" class="know_more">Know more</a>
+    </div>
+  </div>
+</section>
 
 
+<!-- Competition slider-->
+<section class="p-2 bg-transparent margin-bottom">
+  <div class="container">
+    <h2 class="p-4 text-black">Competition ACM</h2>
+    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": true}'>
+      <div class="carousel-cell">
+        <img src="images/new-home.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/new.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/home-img.png" alt="" width=730px>
+      </div>
+    </div>
+    <div class="buttons">
+      <a href="" class="register">Register</a>
+      <a href="" class="know_more">Know more</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Dev OPS slider-->
+<section class="p-2 bg-transparent margin-bottom">
+  <div class="container">
+    <h2 class="p-4 text-black">Cultutral</h2>
+    <div class="carousel" data-flickity='{"wrapAround": true, "autoPlay": true}'>
+      <div class="carousel-cell">
+        <img src="images/new-home.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/new.jpg" alt="" width=730px>
+      </div>
+      <div class="carousel-cell">
+        <img src="images/home-img.png" alt="" width=730px>
+      </div>
+    </div>
+    <div class="buttons">
+      <a href="" class="register">Register</a>
+      <a href="" class="know_more">Know more</a>
+    </div>
+  </div>
+</section>
  
 
 
@@ -128,9 +260,61 @@
       </a>
     </div>
   </footer>
+  <!-- Spots all over page -->
+  <div id="spots">
+    <div class="blue_color" id="spot_one_b"></div>
+    <div class="blue_color" id="spot_two_b"></div>
+    <div class="blue_color" id="spot_three_b"></div>
+    <div class="blue_color" id="spot_four_b"></div>
+    <div class="blue_color" id="spot_five_b"></div>
+    <div class="blue_color" id="spot_six_b"></div>
+    <div class="blue_color" id="spot_seven_b"></div>
+    <div class="blue_color" id="spot_eight_b"></div>
 
+    <div class="blue_color" id="spot_nine_b"></div>
+    <div class="blue_color" id="spot_ten_b"></div>
+    <div class="blue_color" id="spot_eleven_b"></div>
+    <div class="blue_color" id="spot_twelve_b"></div>
+    <div class="blue_color" id="spot_thirteen_b"></div>
+    <div class="blue_color" id="spot_fourteen_b"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <div class="purple_color" id="spot_one_p"></div>
+    <div class="purple_color" id="spot_two_p"></div>
+    <div class="purple_color" id="spot_three_p"></div>
+    <div class="purple_color" id="spot_four_p"></div>
+    <div class="purple_color" id="spot_five_p"></div>
+    <div class="purple_color" id="spot_six_p"></div>
+    <div class="purple_color" id="spot_seven_p"></div>
+    <div class="purple_color" id="spot_eight_p"></div>
+    <div class="purple_color" id="spot_nine_p"></div>
+
+    <div class="purple_color" id="spot_ten_p"></div>
+    <div class="purple_color" id="spot_eleven_p"></div>
+    <div class="purple_color" id="spot_twelve_p"></div>
+    <div class="purple_color" id="spot_thirteen_p"></div>
+    <div class="purple_color" id="spot_fourteen_p"></div>
+    <div class="purple_color" id="spot_fifteen_p"></div>
+    <div class="purple_color" id="spot_sixteen_p"></div>
+    <div class="purple_color" id="spot_seventeen_p"></div>
+    <div class="purple_color" id="spot_eighteen_p"></div>
+    <div class="purple_color" id="spot_nineteen_p"></div>
+    <div class="purple_color" id="spot_twenty_p"></div>
+        
+  </div>
   
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay:500,
+        mirror:true,
+        duration:500,
+        offset:-600
+      });
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
